@@ -3,4 +3,4 @@ def addition(x):
 
 
 def test_answer():
-    assert addition(3) == 5
+    assert addition(4) == 5
