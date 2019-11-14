@@ -1,6 +1,5 @@
-def addition(x):
-    return x + 1
+from addition import addOne
 
 
 def test_answer():
-    assert addition(4) == 5
+    assert addOne(4) == 5
