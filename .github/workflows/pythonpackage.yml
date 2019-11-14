@@ -30,7 +30,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pip install pytest
+        pip install pytest pytest-cov
         python setup.py develop
         pytest --cov-report xml --cov=calculus/ tests/
     - name: SonarCloud Scan
