@@ -33,6 +33,7 @@ jobs:
         pip install pytest pytest-cov
         python setup.py develop
         pytest --cov-report xml --cov=calculus/ tests/
+        cat coverage.xml
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
