@@ -34,7 +34,7 @@ jobs:
         python setup.py develop
         pytest --cov-report xml --cov=calculus/ tests/
         cat coverage.xml
-        sed 's/\/home\/runner\/work\/devops\/devops/\./g' coverage.xml
+        sed -i 's/\/home\/runner\/work\/devops\/devops/\./g' coverage.xml
         cat coverage.xml
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
