@@ -1,2 +1,2 @@
-def addOne(x):
+def add_one(x):
     return x + 1
