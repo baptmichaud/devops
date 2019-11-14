@@ -1,5 +1,5 @@
-from addition import addOne
+from addition import add_one
 
 
 def test_answer():
-    assert addOne(4) == 5
+    assert add_one(4) == 5
